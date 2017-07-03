@@ -1,4 +1,4 @@
-project("getting started")
+project("variables.and.basic.type")
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g -Wall")
 
@@ -12,3 +12,4 @@ add_executable(scope_levels scope_levels.cpp)
 add_executable(decl-ex decl-ex.cpp)
 add_executable(dbl-ptr dbl-ptr.cpp)
 add_executable(compounddecls compounddecls.cpp)
+add_executable(Sales_data Sales_data.cpp)
