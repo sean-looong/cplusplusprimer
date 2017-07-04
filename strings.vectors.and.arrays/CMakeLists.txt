@@ -1,0 +1,22 @@
+project("strings.vectors.and.arrays")
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g -Wall")
+
+add_executable(add_using add_using.cpp)
+add_executable(string_add string_add.cpp)
+add_executable(strcompare strcompare.cpp)
+add_executable(string_io string_io.cpp)
+add_executable(string_io2 string_io2.cpp)
+add_executable(string_size string_size.cpp)
+add_executable(string_size2 string_size2.cpp)
+add_executable(string_size3 string_size3.cpp)
+add_executable(word_echo word_echo.cpp)
+add_executable(getline getline.cpp)
+add_executable(cctype cctype.cpp)
+add_executable(hexify hexify.cpp)
+add_executable(vec_decls vec_decls.cpp)
+add_executable(vecStrings2 vecStrings2.cpp)
+add_executable(vecScores vecScores.cpp)
+add_executable(vecSubs vecSubs.cpp)
+add_executable(arrayScores arrayScores.cpp)
+
