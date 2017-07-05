@@ -1,0 +1,18 @@
+project("expressions")
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g -Wall")
+include_directories(../variables.and.basic.type)
+
+add_executable(arith-ex arith-ex.cpp)
+add_executable(arraysizeof arraysizeof.cpp)
+add_executable(cond cond.cpp)
+add_executable(incr incr.cpp)
+add_executable(int-div int-div.cpp)
+add_executable(oofe oofe.cpp)
+add_executable(overflow overflow.cpp)
+add_executable(prec prec.cpp)
+add_executable(shift-prec shift-prec.cpp)
+add_executable(sizeof_pgm sizeof_pgm.cpp)
+add_executable(unaryOps unaryOps.cpp)
+add_executable(vec_init vec_init.cpp)
+add_executable(warn_dbltoint warn_dbltoint.cpp)
