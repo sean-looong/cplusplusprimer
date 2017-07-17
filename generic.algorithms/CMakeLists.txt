@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 project("generic.algorithms")
 
+include_directories(../functions)
+
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g -Wall")
 
 add_executable(absInt absInt.cpp)
@@ -12,3 +14,9 @@ add_executable(equal equal.cpp)
 add_executable(equiv-istream-iter equiv-istream-iter.cpp)
 add_executable(inserters inserters.cpp)
 add_executable(iostream_iter iostream_iter.cpp)
+add_executable(lambda lambda.cpp)
+add_executable(newcount-size newcount-size.cpp)
+add_executable(ostreamIter ostreamIter.cpp)
+add_executable(rcomma rcomma.cpp)
+add_executable(reverse reverse.cpp)
+add_executable(reverse-iter reverse-iter.cpp)
