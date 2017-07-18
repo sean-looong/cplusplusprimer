@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 project("generic.algorithms")
 
 include_directories(../functions)
+include_directories(../getting.started)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g -Wall")
 
@@ -20,3 +21,7 @@ add_executable(ostreamIter ostreamIter.cpp)
 add_executable(rcomma rcomma.cpp)
 add_executable(reverse reverse.cpp)
 add_executable(reverse-iter reverse-iter.cpp)
+add_executable(rev-iters rev-iters.cpp)
+add_executable(sortSI sortSI.cpp)
+add_executable(use_find use_find.cpp)
+add_executable(use_istream_iter use_istream_iter.cpp)
