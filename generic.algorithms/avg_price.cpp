@@ -12,27 +12,28 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-#include "Sales_data.h"
+#include <iterator>
+using std::istream_iterator;
+using std::ostream_iterator;
+
+#include "Sales_item.h"
 
 int main() {
-    Sales_data total;
+    istream_iterator<Sales_item> in_iter(cin), eof;
+    ostream_iterator<Sales_item> out_iter(cout, "\n");
 
-    if (read(cin, total)) {
-        Sales_data trans;
+    Sales_item sum = *in_iter++;
 
-        while (read(cin, trans)) {
-            if (total.isbn() == trans.isbn()) {
-                total.combine(trans);
-            } else {
-                print(cout, total) << endl;
-                total = trans;
-            }
+    while (in_iter != eof) {
+        if (sum.isbn() == in_iter->isbn()) {
+            sum += *in_iter++;
+        } else {
+            out_iter = sum;
+            sum = *in_iter++;
         }
-
-        print(cout, total) << endl;
-    } else {
-        cerr << "No data?!" << endl;
     }
+
+    out_iter = sum;
 
     return 0;
 }
