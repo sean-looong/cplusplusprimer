@@ -7,3 +7,5 @@ project("associative.containers")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g -Wall")
 
 add_executable(erasemap erasemap.cpp)
+add_executable(map1 map1.cpp)
+add_executable(multimap multimap.cpp)
