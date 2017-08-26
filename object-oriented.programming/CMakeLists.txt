@@ -1,6 +1,16 @@
+cmake_minimum_required(VERSION 3.5)
 project("classes")
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g -Wall")
-#include_directories(../variables.and.basic.type)
+include_directories(../dynamic.memory)
+include_directories(../functions)
 
 add_executable(useQuote useQuote.cpp Quote.cpp)
+add_executable(sample sample.cpp Quote.cpp)
+add_executable(Basket_main Basket_main.cpp Basket.cpp Quote.cpp)
+add_executable(vecBasket vecBasket.cpp Basket.cpp Quote.cpp)
+add_executable(scope scope.cpp)
+add_executable(virtualsNscope virtualsNscope.cpp)
+add_executable(and_orQueryTest and_orQueryTest.cpp get_print.cpp Query.cpp ../dynamic.memory/TextQuery.cpp)
+add_executable(andQueryTest andQueryTest.cpp get_print.cpp Query.cpp ../dynamic.memory/TextQuery.cpp)
+add_executable(wordQueryTest wordQueryTest.cpp get_print.cpp Query.cpp ../dynamic.memory/TextQuery.cpp)
