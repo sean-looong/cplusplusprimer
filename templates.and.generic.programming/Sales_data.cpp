@@ -13,7 +13,7 @@ using std::istream; using std::ostream;
 
 namespace std {
 size_t hash<Sales_data>::operator()(const Sales_data &s) const {
-    return hash<strint>()(s.bookNo) ^
+    return hash<string>()(s.bookNo) ^
            hash<unsigned>()(s.units_sold) ^
            hash<double>()(s.revenue);
 }
